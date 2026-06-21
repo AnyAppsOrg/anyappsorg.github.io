@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AnyApps - A software development organization creating modern applications.">
+    <link rel="icon" href="img/logo.jpg">
+    <title>AnyApps</title>
+    <!-- Note: Google Fonts does not use Subresource Integrity (SRI) as stylesheets are dynamically generated per browser -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/i18n.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="img/logo.jpg" alt="AnyApps Logo">
+                <span>AnyApps</span>
+            </a>
+            <nav class="nav" id="nav-links">
+                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="#apps" class="nav-link" data-i18n="nav.apps">Our Apps</a>
+                <a href="https://github.com/AnyAppsOrg" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="nav.github">GitHub</a>
+            </nav>
+            <div class="controls">
+                <div class="custom-lang-select" id="custom-lang-select">
+                    <button class="lang-select-btn" id="lang-select-btn" aria-label="Select Language" aria-expanded="false">
+                        <img src="https://flagcdn.com/gb.svg" width="18" alt="EN"> <span>EN</span>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-option" data-lang="en">
+                            <img src="https://flagcdn.com/gb.svg" width="18" alt="EN"> EN
+                        </button>
+                        <button class="lang-option" data-lang="fr">
+                            <img src="https://flagcdn.com/fr.svg" width="18" alt="FR"> FR
+                        </button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="container hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">Building the Next Generation of <span class="text-gradient">Mobile Experiences</span></h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">AnyApps is dedicated to creating seamless, innovative, and user-centric applications for modern devices.</p>
+                <div class="hero-actions">
+                    <a href="#apps" class="btn btn-primary btn-large" data-i18n="hero.explore">Explore Our Apps</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="apps" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="apps.title">Our Applications</h2>
+                <div class="apps-grid">
+                    <a href="/AnyForward" class="app-card glass-panel" target="_blank" rel="noopener noreferrer">
+                        <div class="app-icon">
+                            <img src="img/favicon.svg" alt="AnyForward Logo" width="32" height="32">
+                        </div>
+                        <h3 class="app-title">AnyForward</h3>
+                        <p class="app-desc" data-i18n="apps.anyforward.desc">A lightweight Android app that reliably forwards your incoming SMS messages and missed/rejected calls to your email address.</p>
+                        <span class="app-link-text" data-i18n="apps.learnMore">Learn More &rarr;</span>
+                    </a>
+                    
+                    <div class="app-card glass-panel placeholder">
+                        <div class="app-icon coming-soon-icon">?</div>
+                        <h3 class="app-title" data-i18n="apps.comingSoon.title">Coming Soon</h3>
+                        <p class="app-desc" data-i18n="apps.comingSoon.desc">We are always working on new and exciting projects. Stay tuned for our next release.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p data-i18n="footer.rights">&copy; 2026 AnyApps. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/AnyAppsOrg" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
